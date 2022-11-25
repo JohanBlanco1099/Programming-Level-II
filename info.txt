@@ -1,1 +1,5 @@
 set PATH=C:/Program Files/CMake/bin;%PATH%
+
+Url: https://mike.education/programming-level-2
+Current: https://mike.education/object-oriented-programming-level-2
+Pass: QtspAy
