@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.23)
-project(poo_poly_fun_overriding)
+set(BINARY ${CMAKE_PROJECT_NAME})
 
-set(CMAKE_CXX_STANDARD 14)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
 
-include_directories(src)
+set(SOURCES ${SOURCES})
 
-add_executable(poo_poly_fun_overriding main.cpp)
+add_executable(${BINARY}_run ${SOURCES})
+
+add_library(${BINARY}_lib STATIC ${SOURCES})
